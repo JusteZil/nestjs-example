@@ -7,7 +7,6 @@ module.exports = {
     '!**/*.module.ts',
     '!**/*.controller.ts',
   ],
-  coverageReporters: [['json', { projectRoot: '../' }]],
   coverageDirectory: 'coverage',
   moduleDirectories: ['src', 'node_modules'],
   moduleNameMapper: {
