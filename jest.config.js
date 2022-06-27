@@ -7,7 +7,7 @@ module.exports = {
     '!**/*.module.ts',
     '!**/*.controller.ts',
   ],
-  coverageReporters: [['lcov', { projectRoot: '../' }]],
+  coverageReporters: [['json', { projectRoot: '../' }]],
   coverageDirectory: 'coverage',
   moduleDirectories: ['src', 'node_modules'],
   moduleNameMapper: {
@@ -16,7 +16,6 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
-  testRegex: '.*\\.spec\\.ts$',
   verbose: true,
   moduleFileExtensions: ['js', 'json', 'ts'],
   globals: {
